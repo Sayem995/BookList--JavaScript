@@ -47,3 +47,9 @@ class UI {
 
 
 document.addEventListener('DOMcontentLoaded', UI.displayBooks);
+
+document.querySelector('#book-form').addEventListener('submit', (e) => {
+    const title = document.querySelector('#title').nodeValue;
+    const author = document.querySelector('#author').nodeValue;
+    const isbn = document.querySelector('#isbn').nodeValue;
+});
